@@ -37,6 +37,8 @@ As a flagship example, this project implements a cutting-edge privacy logistics 
 
 **GitHub Repository**: [https://github.com/WarrenKuhn/FHEVM-Privacy-Preserving-Examples](https://github.com/WarrenKuhn/FHEVM-Privacy-Preserving-Examples)
 
+**Video**: [FHEVM Privacy-Preserving Examples.mp4](https://streamable.com/o1mglm)
+
 ## 🚀 Quick Start
 
 ### Installation
