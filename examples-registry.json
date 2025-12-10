@@ -1,0 +1,261 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-10",
+  "description": "Registry of all FHEVM examples with metadata",
+  "examples": [
+    {
+      "id": "transportation-dispatch",
+      "name": "Transportation Dispatch",
+      "title": "Privacy-Preserving Transportation Dispatch System",
+      "description": "A complete privacy-first logistics optimization system using FHE that allows secure route coordination while keeping all sensitive data encrypted",
+      "category": "advanced",
+      "difficulty": "advanced",
+      "estimatedTime": "45 minutes",
+      "status": "production-ready",
+      "keywords": [
+        "logistics",
+        "optimization",
+        "privacy",
+        "encryption",
+        "route-planning",
+        "scheduling"
+      ],
+      "concepts": [
+        "Encrypted data handling",
+        "FHE comparisons",
+        "Access control",
+        "Efficiency calculation",
+        "Anonymous matching"
+      ],
+      "prerequisites": [
+        "Understanding of Solidity",
+        "Familiarity with FHEVM basics",
+        "Knowledge of smart contracts"
+      ],
+      "contractFile": "contracts/AnonymousTransport.sol",
+      "testFile": "test/AnonymousTransport.test.ts",
+      "features": [
+        "Encrypted route registration",
+        "Private request submission",
+        "FHE-based optimization",
+        "Anonymous request matching",
+        "Route lifecycle management"
+      ],
+      "fheOperations": [
+        "FHE.asEuint16",
+        "FHE.asEuint32",
+        "FHE.add",
+        "FHE.sub",
+        "FHE.mul",
+        "FHE.le",
+        "FHE.gt",
+        "FHE.and",
+        "FHE.select",
+        "FHE.allowThis",
+        "FHE.allow"
+      ],
+      "gasEstimates": {
+        "registerRoute": 180000,
+        "submitTransportRequest": 220000,
+        "optimizeSchedule": 350000,
+        "matchRequest": 60000
+      },
+      "documentation": {
+        "readme": "COMPETITION_SUBMISSION.md",
+        "technical": "TECHNICAL_DOCUMENTATION.md",
+        "implementation": "IMPLEMENTATION_GUIDE.md",
+        "reference": "QUICK_REFERENCE.md"
+      },
+      "relatedExamples": [
+        "access-control",
+        "fhe-counter"
+      ],
+      "tags": [
+        "real-world",
+        "production",
+        "advanced",
+        "privacy"
+      ],
+      "author": "FHEVM Community",
+      "version": "1.0.0",
+      "network": "sepolia",
+      "license": "MIT"
+    },
+    {
+      "id": "fhe-counter",
+      "name": "FHE Counter",
+      "title": "Simple Encrypted Counter",
+      "description": "A basic encrypted counter demonstrating fundamental FHE operations like addition and subtraction on encrypted values",
+      "category": "basic",
+      "difficulty": "beginner",
+      "estimatedTime": "15 minutes",
+      "status": "production-ready",
+      "keywords": [
+        "counter",
+        "basic",
+        "arithmetic",
+        "encryption",
+        "introduction"
+      ],
+      "concepts": [
+        "Encrypted types",
+        "Basic arithmetic",
+        "Permission management",
+        "Event logging"
+      ],
+      "prerequisites": [
+        "Basic Solidity knowledge",
+        "Understanding of FHEVM types"
+      ],
+      "contractFile": "contracts/FHECounter.sol",
+      "testFile": "test/FHECounter.test.ts",
+      "features": [
+        "Increment operation",
+        "Decrement operation",
+        "Value retrieval",
+        "Overflow protection"
+      ],
+      "fheOperations": [
+        "FHE.asEuint32",
+        "FHE.add",
+        "FHE.sub",
+        "FHE.le",
+        "FHE.allowThis",
+        "FHE.allow"
+      ],
+      "gasEstimates": {
+        "increment": 100000,
+        "decrement": 100000,
+        "getValue": 50000
+      },
+      "documentation": {
+        "readme": "docs/fhe-counter/README.md"
+      },
+      "relatedExamples": [
+        "transportation-dispatch"
+      ],
+      "tags": [
+        "beginner",
+        "basic",
+        "arithmetic"
+      ],
+      "author": "FHEVM Community",
+      "version": "1.0.0",
+      "network": "sepolia",
+      "license": "MIT"
+    },
+    {
+      "id": "access-control",
+      "name": "Access Control",
+      "title": "FHE Permission Management",
+      "description": "Demonstrates proper use of FHE.allowThis() and FHE.allow() for managing permissions on encrypted values",
+      "category": "intermediate",
+      "difficulty": "intermediate",
+      "estimatedTime": "25 minutes",
+      "status": "production-ready",
+      "keywords": [
+        "access-control",
+        "permissions",
+        "allowThis",
+        "allow",
+        "security"
+      ],
+      "concepts": [
+        "Permission system",
+        "Contract permissions",
+        "User permissions",
+        "Access control patterns"
+      ],
+      "prerequisites": [
+        "FHEVM basics knowledge",
+        "Understanding of contracts"
+      ],
+      "contractFile": "contracts/AccessControl.sol",
+      "testFile": "test/AccessControl.test.ts",
+      "features": [
+        "Role-based access",
+        "Permission grants",
+        "Permission revocation",
+        "Secure operations"
+      ],
+      "fheOperations": [
+        "FHE.asEuint32",
+        "FHE.allowThis",
+        "FHE.allow"
+      ],
+      "gasEstimates": {
+        "grantPermission": 50000,
+        "revokePermission": 30000,
+        "secureOperation": 100000
+      },
+      "documentation": {
+        "readme": "docs/access-control/README.md"
+      },
+      "relatedExamples": [
+        "transportation-dispatch",
+        "fhe-counter"
+      ],
+      "tags": [
+        "intermediate",
+        "security",
+        "permissions"
+      ],
+      "author": "FHEVM Community",
+      "version": "1.0.0",
+      "network": "sepolia",
+      "license": "MIT"
+    }
+  ],
+  "categories": {
+    "basic": {
+      "name": "Basic Examples",
+      "description": "Fundamental FHEVM concepts and operations",
+      "order": 1
+    },
+    "intermediate": {
+      "name": "Intermediate Examples",
+      "description": "More complex patterns and techniques",
+      "order": 2
+    },
+    "advanced": {
+      "name": "Advanced Examples",
+      "description": "Real-world applications and complex systems",
+      "order": 3
+    }
+  },
+  "statistics": {
+    "totalExamples": 3,
+    "byCategory": {
+      "basic": 1,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "byDifficulty": {
+      "beginner": 1,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "byStatus": {
+      "production-ready": 3,
+      "in-development": 0,
+      "deprecated": 0
+    }
+  },
+  "tools": {
+    "scaffold": {
+      "script": "scripts/create-fhevm-example.ts",
+      "description": "Create standalone example repositories"
+    },
+    "docs": {
+      "script": "scripts/generate-docs.ts",
+      "description": "Generate documentation from code"
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "schema": "1.0.0",
+    "created": "2025-12-10",
+    "updated": "2025-12-10",
+    "maintainer": "FHEVM Community"
+  }
+}
