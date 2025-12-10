@@ -33,9 +33,9 @@ As a flagship example, this project implements a cutting-edge privacy logistics 
 
 ## 🌐 Live Application
 
-**Web Application**: [https://transportation-dispatch-fhe.vercel.app/](https://transportation-dispatch-fhe.vercel.app/)
+**Web Application**: [https://fhevm-privacy-preserving-examples.vercel.app/](https://fhevm-privacy-preserving-examples.vercel.app/)
 
-**GitHub Repository**: [https://github.com/WarrenKuhn/TransportationDispatchFHE](https://github.com/WarrenKuhn/TransportationDispatchFHE)
+**GitHub Repository**: [https://github.com/WarrenKuhn/FHEVM-Privacy-Preserving-Examples](https://github.com/WarrenKuhn/FHEVM-Privacy-Preserving-Examples)
 
 ## 🚀 Quick Start
 
